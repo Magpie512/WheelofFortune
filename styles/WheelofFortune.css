@@ -1,0 +1,61 @@
+/* WheelofFortune.css */
+:root {
+    --primary-color: rgb(84, 84, 239);
+    --secondary-color: rgb(253, 194, 24);
+}
+
+
+
+* {
+    outline: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+}
+
+body {
+    
+}
+
+main {
+    margin: auto;
+    padding: auto;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    gap: 1em;
+}
+
+
+
+footer {
+    width: 100%;
+    padding: 10px;
+    position: sticky;
+    bottom: 0;
+    background-color: var(--primary-color);
+}
+
+footer p {
+    outline: none;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+footer a {
+    text-decoration: none;
+    color: green;
+    outline: none;
+}
