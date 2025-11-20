@@ -2,6 +2,7 @@
 :root {
     --primary-color: rgb(84, 84, 239);
     --secondary-color: rgb(253, 194, 24);
+    --hover-color:  rgb(202, 157, 23);
 }
 
 
@@ -33,9 +34,22 @@ main {
 .controls {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 1em;
-    gap: 1em;
+    align-items: center; 
+    padding: 10px;
+    gap: 1rem;
+}
+
+.controls button {
+    padding: 10px;
+    font-size: large;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--hover-color);
 }
 
 
@@ -43,7 +57,7 @@ main {
 footer {
     width: 100%;
     padding: 10px;
-    position: sticky;
+    position: fixed;
     bottom: 0;
     background-color: var(--primary-color);
 }
@@ -52,6 +66,7 @@ footer p {
     outline: none;
     background-color: var(--secondary-color);
     border-radius: 5px;
+    font-size: small;
 }
 
 footer a {
