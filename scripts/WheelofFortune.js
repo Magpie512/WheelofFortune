@@ -114,3 +114,15 @@ updateStatusBar();
 
 // Initial alert to start the game
 alert(`Welcome to Wheel of Fortune! It's ${players[currentPlayerIndex].name}'s turn!`);
+
+// Puzzle list
+fetch('puzzles.txt')
+    .then(response => response.text())
+    .then(data => {
+        let puzzles = data.split('\n').map(line => line.trim()).filter(line => line.length > 0);
+        currentPuzzle = puzzles[Math.floor(Math.random() * puzzles.length)].toUpperCase();
+        loadNewPuzzle();
+    }
+    
+);
+
